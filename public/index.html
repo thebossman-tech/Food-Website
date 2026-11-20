@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flavor House - Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background: #fffaf5;
+        }
+
+        header {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .logo {
+            color: #ff6600;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            background: #fff0df;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 span {
+            color: #ff6600;
+        }
+
+        .hero-text p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #ff6600;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+        }
+
+        .hero img {
+            width: 45%;
+            border-radius: 20px;
+        }
+
+        .featured {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .featured h2 span {
+            color: #ff6600;
+        }
+
+        .foods {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .food {
+            width: 30%;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px #ddd;
+        }
+
+        .food img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .food h3 {
+            margin: 15px;
+        }
+
+        .food p {
+            color: #ff6600;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .hero-text, .hero img {
+                width: 100%;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .foods {
+                flex-direction: column;
+            }
+
+            .food {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Flavor House</div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+
+    <div class="hero-text">
+        <h1>Delicious Food <span>Every Day!</span></h1>
+
+        <p>
+            Welcome to Flavor House. Enjoy delicious meals made with
+            fresh ingredients, love and passion. We bring amazing
+            flavors directly to your table.
+        </p>
+
+        <a href="gallery.html" class="btn">Explore Our Food</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+         alt="Delicious burger">
+
+</div>
+
+<section class="featured">
+
+    <h2>Our <span>Popular Meals</span></h2>
+
+    <div class="foods">
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80">
+            <h3>Classic Burger</h3>
+            <p>₦8,500</p>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80">
+            <h3>Delicious Pizza</h3>
+            <p>₦12,000</p>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80">
+            <h3>Grilled Chicken</h3>
+            <p>₦10,500</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Flavor House. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

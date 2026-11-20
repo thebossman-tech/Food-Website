@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flavor House - About Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background: #fffaf5;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .logo {
+            font-size: 28px;
+            color: #ff6600;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 80px 8%;
+        }
+
+        .about-container img {
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .about-text h1 span {
+            color: #ff6600;
+        }
+
+        .about-text p {
+            line-height: 1.9;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        .mission {
+            background: #fff0df;
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .mission h2 {
+            color: #ff6600;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        .mission p {
+            line-height: 1.8;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .about-container {
+                flex-direction: column;
+            }
+
+            .about-container img {
+                width: 100%;
+            }
+
+            .about-text h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Flavor House</div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</header>
+
+<div class="about-container">
+
+    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80"
+         alt="Restaurant interior">
+
+    <div class="about-text">
+
+        <h1>About <span>Flavor House</span></h1>
+
+        <p>
+            Flavor House is a modern restaurant dedicated to serving
+            delicious meals and providing an unforgettable dining experience.
+        </p>
+
+        <p>
+            Our passion for food inspires us to create wonderful meals
+            using fresh ingredients, carefully selected spices and
+            excellent cooking techniques.
+        </p>
+
+        <p>
+            We believe food brings people together. Whether you are
+            celebrating with friends, enjoying family time or simply
+            satisfying your hunger, we are here to serve you.
+        </p>
+
+    </div>
+
+</div>
+
+<div class="mission">
+
+    <h2>Our Mission</h2>
+
+    <p>
+        To serve quality food, provide excellent customer service,
+        and make every customer leave with a smile.
+        We want every meal at Flavor House to be a memorable experience.
+    </p>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Flavor House. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
